@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "我的",
+  "usingComponents": {
+    "container": "antd-mini/es/Container/index",
+    "tab-bar": "antd-mini/es/TabBar/index"
+  }
+}
