@@ -1,0 +1,13 @@
+{
+  "defaultTitle": "首页",
+  "usingComponents": {
+    "tabs": "antd-mini/es/Tabs/index",
+    "container": "antd-mini/es/Container/index",
+    "grid": "antd-mini/es/Grid/index",
+    "badge":"antd-mini/es/Badge/index",
+    "modal": "antd-mini/es/Modal/index",
+    "button": "antd-mini/es/Button/index",
+    "icon": "antd-mini/es/Icon/index",
+    "grid-tab": "/components/GridTab/GridTab"
+  }
+}

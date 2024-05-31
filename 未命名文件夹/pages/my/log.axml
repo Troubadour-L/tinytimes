@@ -1,0 +1,9 @@
+
+<container title="受控模式">
+  <tab-bar
+    items="{{tabs}}"
+    current="{{current}}"
+    onChange="handleChange"
+  />
+
+</container>

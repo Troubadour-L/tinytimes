@@ -1,0 +1,40 @@
+<!-- Part-One 顶部轮播 -->
+<container>
+  <tabs items="{{items}}" current="{{current}}" onChange="onChange" tabsBarClassName="tab-bar">
+    <swiper
+      current="{{current}}"
+      autoplay="{{true}}"
+      vertical="{{false}}"
+      circular="{{false}}"
+      onChange="onSwipeChange"
+    >
+      <swiper-item a:for="{{items}}">
+        <view class="content">
+          {{item.content}}
+        </view>
+      </swiper-item>
+    </swiper>
+  </tabs>
+</container>
+
+<!-- Part-Two 四大金刚 -->
+<container className="grid-container">
+  <grid-tab item="{{itemsCustom}}" iconSize="{{30}}"/>
+</container>
+
+<!-- Part-Three 好物推荐 -->
+<view class="recommon-container">
+  <tabs
+    items="{{ items }}"
+    scrollMode="center" />
+</view>
+
+<!-- Part- 开屏弹窗 -->
+<modal 
+  visible="{{customBodyVisible}}" 
+  onClose="handleClose">
+  <view class="body">
+    <image mode="scaleToFill" src="https://mdn.alipayobjects.com/huamei_yujk1o/afts/img/A*xYjqRJiKsvoAAAAAAAAAAAAADuaJAQ/original" class="bodyImg"/>
+    <view class="bodyAction"><icon type="CloseCircleOutline" onTap="handleClose"/></view>
+  </view>
+</modal>

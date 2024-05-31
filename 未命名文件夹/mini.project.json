@@ -1,0 +1,9 @@
+{
+  "format": 2,
+  "compileOptions": {
+    "enableNodeModuleBabelTransform": true
+  },
+  "developOptions": {
+    "hotReload": true
+  }
+}

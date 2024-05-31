@@ -1,0 +1,33 @@
+<view class="grid-tab">
+  <view a:for="{{ item }}" a:for-index="idx" a:for-item="tabs">
+
+    <view a:if="{{ !tabs.isLottie }}" class="grid-tab-item">
+      <view>
+        <image
+          mode="scaleToFill"
+          src="{{tabs.icon}}"
+          class="grid-tab-item-img"
+          style="width: {{iconSize}}px; height: {{iconSize}}px;"
+        />
+        <view class="grid-tab-item-title">{{tabs.title}}</view>
+      </view>
+    </view>
+
+    <view a:if="{{ tabs.isLottie }}" class="grid-tab-item">
+      <view>
+        <lottie
+          assets-path="{{tabs.assetsPath}}"
+          autoplay="{{tabs.autoplay}}"
+          id="{{tabs.id}}"
+          path="{{tabs.path}}"
+          repeat-count="{{tabs.repeatCount}}"
+          placeholder="{{tabs.placeholder}}"
+          class="grid-tab-item-lottie"
+          style="width: {{iconSize}}px; height: {{iconSize}}px;"
+        />
+        <view class="grid-tab-item-title">{{tabs.title}}</view>
+      </view>
+    </view>
+
+  </view>
+</view>

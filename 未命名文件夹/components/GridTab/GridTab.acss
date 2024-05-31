@@ -1,0 +1,36 @@
+
+.grid-tab {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid-tab-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.grid-tab-item-img {
+  vertical-align: bottom;
+  height: 24px;
+  width: 24px;
+}
+
+.grid-tab-item-lottie {
+  margin: 0 auto;
+}
+
+.grid-tab-item-title {
+  font-size: 13px;
+  color: #333;
+  line-height: 18.5px;
+  width: 100%;
+  margin-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

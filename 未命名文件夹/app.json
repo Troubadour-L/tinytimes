@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/log",
+    "pages/shopCar/shopCar",
+    "pages/community/community",
+    "pages/message/message"
+  ],
+  "window": {
+    "defaultTitle": "TinyTimes"
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#515151",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "public/icons/home/inactive.png",
+        "activeIcon": "public/icons/home/active.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "name": "社区",
+        "icon": "public/icons/community/inactive.png",
+        "activeIcon": "public/icons/community/active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "name": "消息",
+        "icon": "public/icons/message/inactive.png",
+        "activeIcon": "public/icons/message/active.png"
+      },
+      {
+        "pagePath": "pages/shopCar/shopCar",
+        "name": "购物车",
+        "icon": "public/icons/shopCar/inactive.png",
+        "activeIcon": "public/icons/shopCar/active.png"
+      },
+      {
+        "pagePath": "pages/my/log",
+        "name": "我的",
+        "icon": "public/icons/my/inactive.png",
+        "activeIcon": "public/icons/my/active.png"
+      }
+    ]
+  },
+  "behavior": {
+    "requestReferrerStrategy": "page"
+  }
+}
